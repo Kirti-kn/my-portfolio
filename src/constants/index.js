@@ -3,62 +3,63 @@ import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
 
-export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+export const iconCommonClasses = "transition-transform transition-colors duration-300 ease-in-out hover:scale-110 cursor-pointer";
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+export const HERO_CONTENT = `I'm a full-stack developer and machine learning enthusiast with a solid foundation in both frontend and backend development. I build scalable web applications using JavaScript, ReactJS, and Ruby on Rails, and craft responsive UIs with Tailwind CSS.
+On the backend, I’ve worked with SQLite3, PostgreSQL, and MySQL, and use Python for scripting and ML model development. I’m passionate about solving real-world problems, exploring new technologies, and contributing to projects that deliver meaningful user experiences.`;
+
+export const ABOUT_TEXT = `Hey there! I’m Kirti Padhi, a final-year B.Tech. Computer Science student at IIIT Bhubaneswar and a Software Engineer Intern at BigBinary.
+My coding journey began back in class 11th, where I first discovered my love for programming through Python and MySQL. Since then, I’ve been constantly exploring the ever-evolving world of tech — diving deep into both Machine Learning and Web Development along the way.
+I’m skilled in the fundamentals of Machine Learning and Deep Learning, and hands-on with modern frameworks like ReactJS and Ruby on Rails — the very stack I currently work with on live projects at BigBinary.
+But I don’t just bring tech to the table — I bring clarity in communication, quick adaptability, and a natural flair for observation and problem-solving. I'm a curious mind, a sharp listener, and a team player who thrives in dynamic environments. Whether it's building intelligent models or crafting intuitive user interfaces, I love turning challenges into clean, impactful solutions.
+Let’s just say: I code smart, adapt fast, and never stop learning.`;
 
 export const EXPERIENCES = [
   {
-    year: "2023 - Present",
-    role: "Senior Full Stack Developer",
-    company: "Google Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
+    year: "Jan 2025 - Present",
+    role: " Full Stack Developer Intern",
+    company: " BigBinary Solutions Pvt. Ltd.",
+    description: `Working as a Full Stack Developer Intern, contributing to both frontend and backend aspects of projects. Responsibilities included utilizing modern web technologies for interface development and server-side logic implementation.`,
+    technologies: ["Javascript", "React.js", "Ruby on Rails", "PostgreSql", "SqLite3", "TailwindCSS"],
   },
   {
-    year: "2022 - 2023",
-    role: "Frontend Developer",
-    company: "Adobe",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
+    year: "2024",
+    role: "Data Science Researcher",
+    company: "IIIT Bhubaneswar (under Prof. Sanjay Saxena)",
+    description: `Engaged in research focusing on the application of radiogenomics for survival estimation in brain tumor patients. This work contributed to the "Radiomics and Radiogenomics in Neuro-Oncology, Volume-2: Genetics and Clinical Applications" as the 6th chapter of the publication.`,
+    technologies: ["Python", "Machine Learning", "Data Analysis", "EDA"],
   },
   {
-    year: "2021 - 2022",
-    role: "Full Stack Developer",
-    company: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
-  },
-  {
-    year: "2020 - 2021",
-    role: "Software Engineer",
-    company: "Paypal",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-    technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
+    year: "May 2023 – July 2023",
+    role: "Python Developer (Freelance)",
+    company: "Femacare Pvt. Ltd.",
+    description: `Worked on a freelance basis to build a machine learning model capable of predicting PCOS using images submitted by users. Integrated the developed ML model with the frontend system using the Flask framework.`,
+    technologies: ["Python", "Machine Learning", "Flask", "HTML", "CSS"],
   },
 ];
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
+    title: "PCOS Prediction",
     image: project1,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+      "A machine learning project designed to predict Polycystic Ovary Syndrome (PCOS) using images uploaded by the user. The project utilized Convolutional Neural Networks (CNN) as the predictive model and achieved an accuracy of 91.3%.",
+    technologies: ["HTML", "CSS", "Deep Learning", "Flask", "Python", "JavaScript", "Figma"],
+    projectLink: "https://github.com/Kirti-kn/PCOS_prediction",
   },
   {
-    title: "Task Management App",
+    title: "Comment Analysis",
     image: project2,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+      "This tool scrapes comments from a specific Instagram post URL provided by the user. It employs the roberta-base-go_emotions transformer model to analyze the emotions or types of comments, then visualizes the results as percentages using pie charts and bar plots.",
+    technologies: ["Python", "Transformer Pipeline", "Selenium Webdriver"],
   },
   {
-    title: "Portfolio Website",
+    title: "CineSearcher",
     image: project3,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+      "CineSearcher is a movie searching application built as a web app. It allows users to search for movies, apply filters to refine results, save movies to a favorites list, and maintains a history of past searches.",
+    technologies: ["JavaScript" ,"React.js", "TailwindCSS"],
   },
   {
     title: "Blogging Platform",
@@ -70,7 +71,6 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: "767 Fifth Avenue, New York, NY 10153 ",
   phoneNo: "+12 4555 666 00 ",
-  email: "me@example.com",
+  email: "kirtipadhi06@gmail.com",
 };

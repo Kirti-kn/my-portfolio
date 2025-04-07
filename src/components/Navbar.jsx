@@ -1,20 +1,20 @@
 import React from 'react';
-// TODO - change the logo 
-import logo from "../assets/kevinRushLogo.png";
 import { FaLinkedin } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
-import { FaInstagram } from 'react-icons/fa';
+import { FaTelegramPlane } from "react-icons/fa";
+import { iconCommonClasses } from '../constants';
 const Navbar = () => {
   return (
-    <nav className='mb-20 flex items-center justify-between py-6'>
-        <div className='flex flex-shrink-0 items-center'>
-            <img src={logo} alt="logo" className='mx-2 w-10'/>
-        </div>
-        <div className='mx-8 flex items-center justify-center gap-4 text-2xl'>
-            <FaLinkedin />
-            <FaGithub />
-            <FaInstagram />
-        </div>
+    <nav className='mb-20 mt-4 flex items-center justify-around text-2xl py-6 w-full md:w-1/2 mx-auto '>
+      <a href="https://www.linkedin.com/in/kirti-padhi-b83614245/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+        <FaLinkedin className={iconCommonClasses} />
+      </a>
+      <a href="https://github.com/Kirti-kn" target="_blank" rel="noopener noreferrer" aria-label="Github Profile">
+            <FaGithub className={iconCommonClasses} />
+      </a>
+      <a href="https://t.me/Kirti_padhi" target="_blank" rel="noopener noreferrer" aria-label="Telegram Profile">
+            <FaTelegramPlane className={iconCommonClasses} />
+      </a>
     </nav>
   )
 }
